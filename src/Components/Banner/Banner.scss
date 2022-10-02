@@ -1,0 +1,21 @@
+@import "../../Variables.scss";
+.banner-container{
+    min-height: 20px;
+    padding: 25px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main);
+    color: white;
+    margin: 1em 0;
+    position: relative;
+    overflow: hidden;
+    .title{
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0.5em 0;
+        width: $widthPage;
+        padding: 0 40px;
+    }
+}

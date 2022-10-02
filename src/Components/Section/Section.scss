@@ -1,0 +1,15 @@
+@import '../../Variables.scss';
+.section-container{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--bg);
+    position: relative;
+    overflow: hidden;
+}
+.section-content{
+    height: 100%;
+    width: 100%;
+    
+}

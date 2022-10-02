@@ -1,0 +1,25 @@
+.home-container{
+    width: 100%;
+    min-height: 100vh;
+    .half-w{
+        flex-direction: column;
+        width: 50%;
+        max-width: 800px;
+        min-width: 500px;
+        position: relative;
+        z-index: 1;
+        h1.title-home{
+            font-weight: 500;
+            font-size: 3.2em;
+            color: var(--h1);
+            margin-bottom: 15px;
+        }
+        p.p-home{
+            font-size: 1em;
+            color: var(--p);
+        }
+        .btns{
+            margin: 7% 0;
+        }
+    }
+}
