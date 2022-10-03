@@ -9,7 +9,7 @@ function Header() {
                 <div className="content">
                     <div className="menu-btn"/>
                     <div className="title">
-                        {'name'}
+                        {'NOME DO ...'}
                     </div>
                     <div className="links flex align">
                         {screensList.map((screen, i)=>{

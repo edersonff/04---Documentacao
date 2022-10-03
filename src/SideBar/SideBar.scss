@@ -1,0 +1,22 @@
+.container-sidebar{
+    width: 200px;
+    height: 50%;
+    border-right: 1px solid #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 80px;
+    padding-left: 40px;
+    .dot{
+        width: 10px;
+        height: 10px;
+        border: 2px solid #FFFFFF;
+        border-radius: 10px;
+        &.fill{
+            background: #FFFFFF;
+            box-shadow: 0px 0px 50px 9px rgba(0, 240, 255, 0.57);
+        }
+    }
+}
