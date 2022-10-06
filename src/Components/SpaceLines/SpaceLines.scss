@@ -2,6 +2,7 @@
     position: absolute;
     z-index: 15;
     .space-line{
+        clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 70%);
         height: 3px;
         position: relative;
         &.red{
