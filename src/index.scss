@@ -5,12 +5,12 @@
 :root{
   --bg: rgb(22, 43, 49);
   --fill-btn-text: #fff;
-  --header: rgb(235, 235, 235);
-  --main: #FD6D2C;
+  --navbar: rgb(20, 55, 63);
+  --main: #2cfdfd;
   --h1: #000;
   --p: #939393;
   --a: #fff;
-  --a-select: rgba(30, 199, 199, 1);
+  --a-select: #2cfdfd;
   --title: #fff;
   --footer: rgb(219, 219, 219);
 }
@@ -79,6 +79,10 @@ img.contain{
   object-fit: cover;
   position: absolute;
 }
+button{
+  cursor: pointer;
+}
+
 /* Buttons */
 .button{
   height: 55px;
@@ -150,11 +154,12 @@ img.contain{
 }
 /* ScrollBar */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 12px;
 }
 ::-webkit-scrollbar-thumb{
   background-color: var(--main);
   padding: 10px;
+  border-radius: 20px;
 }
 @media only screen and (max-width: 800px) {
   .resize{

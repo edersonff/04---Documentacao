@@ -7,6 +7,8 @@ import {
 import Home from './Screens/Home/Home';
 import Layout from './Layout/Layout';
 import Error from './Screens/Error/Error';
+import Documentação from './Screens/Documentação/Documentação';
+import DocumentaçãoLinguagem from './Screens/DocumentaçãoLinguagem/DocumentaçãoLinguagem';
 
 export default function Navigator(){
   return(
@@ -14,6 +16,8 @@ export default function Navigator(){
     <Layout>
       <Routes>
         <Route path='/' element={<Home />}/>
+        <Route path='/documentação' element={<Documentação />}/>
+        <Route path='/documentação/:linguagem' element={<DocumentaçãoLinguagem />}/>
         <Route path='*' element={<Error />}/>
       </Routes>
     </Layout>
