@@ -1,5 +1,50 @@
 .navbar-container{
-    width: 30vw;
+    width: 364px;
     height: 100%;
+    margin-left: 36px;
+    bottom: 0;
+    z-index: 1;
     background-color: var(--navbar);
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+    .navbar-section{
+        h2{
+            font-size: 36px;
+            line-height: 40px;
+            display: flex;
+            align-items: center;
+            height: 101px;
+            font-size: 30px;
+            color: #fff;
+            font-weight: 400;
+            background: #203237;
+        }
+        *{
+            width: 100%;
+            padding: 0 26px;
+            box-sizing: border-box;
+        }
+        .buttons-navbar{
+            height: 0;
+            overflow-y: hidden;
+            transition: 0.25s height cubic-bezier(0.075, 0.82, 0.165, 1);
+            button{
+                height: 45px;
+                margin: 11px 0;
+                border-radius: 8px;
+                background-color: transparent;
+                color: #E3E3E3;
+                font-family: Neucha;
+                font-size: 18px;
+                text-align: left;
+                font-weight: 100;
+                &.active{
+                    color: #000;
+                    background-color: var(--second);
+                }
+            }
+        }
+    }
 }

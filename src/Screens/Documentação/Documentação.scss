@@ -1,5 +1,74 @@
 .documentação-container{
     display: flex;
-    height: 100%;
     width: 100%;
+    height: 75vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;    
+    h1,h2,h3,h4,h5,h6,p{
+        text-overflow: ellipsis;
+        overflow: hidden;   
+        white-space: nowrap;
+    }
+    .margin{
+        margin-bottom: 18px;
+    }
+    .documentação-content{
+        overflow-y: scroll;
+        width: 63vw;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 0 34px;
+        padding-top: 26px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        span.textbox{
+            color: rgba(209, 209, 209, 1);
+            font-size: 17px;
+            line-height: 26px;
+            display: flex;
+            font-weight: 100;
+            align-items: center;
+            color: #D1D1D1;
+        }
+        .stars{
+            position: absolute;
+            top: 0;
+            right: 10px;
+            svg{
+                transform: rotate(15deg);
+                font-size: 25px;
+                color: #ACACAC;
+                margin: 0 5px;
+            }
+        }
+        h2.navbar-section{
+            font-size: 24px;
+            font-weight: 400;
+            text-align: left;
+            color: #fff;
+            overflow: visible;
+            span{
+                color: #C2C2C2;
+            }
+        }
+    }
+    .navigation{
+        h2{
+            font-size: 30px;
+            text-align: left;
+            color: #fff;
+            font-weight: 100;
+        }
+        .navigation-links{
+            border-left: 5px solid var(--second);
+            box-sizing: border-box;
+            padding: 0 27px;
+            color: var(--second);
+            p{
+                margin: 5px 0;
+            }
+        }
+    }
 }

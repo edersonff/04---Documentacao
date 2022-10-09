@@ -1,13 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Banner from '../../Components/Banner/Banner';
 import HalfPage from '../../Components/HalfPage/HalfPage';
 import './Home.scss';
-import { AiOutlineArrowRight } from "react-icons/ai";
 import Section from '../../Components/Section/Section';
 import Coffe from '../../Components/Coffe/Coffe';
 import SpaceLines from '../../Components/SpaceLines/SpaceLines';
-import SideBar from '../../SideBar/SideBar';
+import SideBar from '../../SideBarHome/SideBarHome';
 
 function Home({}) {
     const {innerWidth, innerHeight} = window;

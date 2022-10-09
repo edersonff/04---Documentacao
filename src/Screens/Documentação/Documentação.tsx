@@ -1,4 +1,6 @@
+import CodeComponent from '../../Components/CodeComponent/CodeComponent';
 import HalfPage from '../../Components/HalfPage/HalfPage';
+import AiOutlineStar from '../../Components/Icons/Star/Star';
 import Navbar from '../../Navbar/Navbar';
 import './Documentação.scss';
 
@@ -6,9 +8,36 @@ function Documentação({}) {
     return (
     <div className='documentação-container'>
         <Navbar />
-        <HalfPage height='100%' color='radial-gradient(41.52% 62.31% at 71.9% 50%, rgba(61, 100, 108, 1) 0%, rgb(22, 43, 49) 100%)' paddingTop={'0'} margin='0'>
-
-        </HalfPage>
+        <div className="documentação-content">
+            <div className="stars">
+                <AiOutlineStar />
+                <AiOutlineStar />
+                <AiOutlineStar />
+                <AiOutlineStar />
+                <AiOutlineStar />
+            </div>
+            <h2 className="navbar-section margin">
+                JAVASCRIPT {'>'} <span>Home</span> {'>'} <span>Back-end</span> {'>'} <span>Seila</span>
+            </h2>
+            <div className="navigation margin">
+                <h2>Comece :)</h2>
+                <div className="navigation-links">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div className="navigation margin">
+                <h2>Comece :)</h2>
+                <div className="navigation-links">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <span className='textbox margin'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </span>
+            <CodeComponent title='JAVASCRIPT PRIMEIRO PROJETO' />
+        </div>
     </div>
     );
 }

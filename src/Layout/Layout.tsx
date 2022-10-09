@@ -10,7 +10,6 @@ function Layout({ children } : { children: React.ReactNode }) {
             <div className="layout-content">
                 {children}
             </div>
-            <Footer />
         </div>
     );
 }

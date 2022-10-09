@@ -15,13 +15,16 @@
         position: absolute;
         bottom: 5%;
         z-index: 5;
+        //00F0FF 3E97FF
         background: radial-gradient(70.91% 70.91% at 50.11% 19.39%, #346C74 0%, #1A393E 100%);
-        box-shadow: 0px -8px 76px #00F0FF, 0px -67px 223px 41px #3E97FF;    }
+        box-shadow: 0px -79px 223px 41px #00F0FF, 0px -8px 76px 10px #3E97FF;
+        
+    }
     .coffe-canva{
         width: 550px;
         height: 550px;
         position: absolute;
         z-index: 10;
-        margin-bottom: 111px;
+        margin-bottom: 80px;
     }
 }
