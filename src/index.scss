@@ -143,6 +143,21 @@ button{
   flex-wrap: wrap;
   margin: 0 auto;
 }
+.svg-hover{
+  svg{
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    &:hover{
+      transform: scale(1.2) rotate(45deg)!important;
+    }
+  }
+}
+.ignore-container{
+  height: 75vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;   
+}
 /* Image-Layout */
 .image-layout{
   width: 100%;

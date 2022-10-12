@@ -11,12 +11,11 @@
     }
     .navbar-section{
         h2{
-            font-size: 36px;
             line-height: 40px;
             display: flex;
             align-items: center;
             height: 101px;
-            font-size: 30px;
+            font-size: 25px;
             color: #fff;
             font-weight: 400;
             background: #203237;
@@ -27,17 +26,16 @@
             box-sizing: border-box;
         }
         .buttons-navbar{
-            height: 0;
             overflow-y: hidden;
             transition: 0.25s height cubic-bezier(0.075, 0.82, 0.165, 1);
             button{
-                height: 45px;
+                height: 40px;
                 margin: 11px 0;
                 border-radius: 8px;
                 background-color: transparent;
                 color: #E3E3E3;
                 font-family: Neucha;
-                font-size: 18px;
+                font-size: 15px;
                 text-align: left;
                 font-weight: 100;
                 &.active{

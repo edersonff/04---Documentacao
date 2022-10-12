@@ -1,21 +1,16 @@
 import CodeComponent from '../../Components/CodeComponent/CodeComponent';
 import HalfPage from '../../Components/HalfPage/HalfPage';
 import AiOutlineStar from '../../Components/Icons/Star/Star';
+import Stars from '../../Components/Stars/Stars';
 import Navbar from '../../Navbar/Navbar';
 import './Documentação.scss';
 
 function Documentação({}) {
     return (
-    <div className='documentação-container'>
+    <div className='documentação-container ignore-container'>
         <Navbar />
         <div className="documentação-content">
-            <div className="stars">
-                <AiOutlineStar />
-                <AiOutlineStar />
-                <AiOutlineStar />
-                <AiOutlineStar />
-                <AiOutlineStar />
-            </div>
+            <Stars />
             <h2 className="navbar-section margin">
                 JAVASCRIPT {'>'} <span>Home</span> {'>'} <span>Back-end</span> {'>'} <span>Seila</span>
             </h2>

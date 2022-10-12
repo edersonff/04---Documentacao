@@ -1,0 +1,11 @@
+.stars{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    svg{
+        transform: rotate(0deg);
+        font-size: 25px;
+        color: #ACACAC;
+        margin: 0 5px;
+    }
+}
