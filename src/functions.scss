@@ -1,0 +1,10 @@
+@mixin leftIcon($margin: 10px) {
+    position: relative;
+    svg{
+        position: absolute;
+        width: 15px;
+        margin-left: $margin;
+        z-index: 1;
+        pointer-events: none;
+      }
+}

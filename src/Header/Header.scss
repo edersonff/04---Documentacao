@@ -1,4 +1,4 @@
-
+@import '../functions.scss';
 header.navbar{
   display: flex; 
   align-items: center;
@@ -27,13 +27,9 @@ header.navbar{
       background-color: var(--search);
       display: flex;
       align-items: center;
+      @include leftIcon(10px);
       svg{
-        position: absolute;
-        width: 15px;
-        margin-left: 10px;
         color: var(--search-text);
-        z-index: 1;
-        pointer-events: none;
       }
       input[type="search"]{
         font-family: Neucha;

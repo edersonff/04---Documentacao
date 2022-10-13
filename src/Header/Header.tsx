@@ -27,8 +27,8 @@ function Header() {
                             <FiSearch />
                             <input  placeholder='Search' type="search" />
                         </div>
-                        <select className="language hide-mobile-first lateral-margin">
-                            <option selected disabled>Language</option>
+                        <select defaultValue="" className="language hide-mobile-first lateral-margin">
+                            <option disabled>Language</option>
                             {
                                 ['English', 'Português'].map((language, i)=>{
                                     return(

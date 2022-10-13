@@ -10,11 +10,20 @@ import Error from './Screens/Error/Error';
 import Documentação from './Screens/Documentação/Documentação';
 import DocumentaçãoLinguagem from './Screens/DocumentaçãoLinguagem/DocumentaçãoLinguagem';
 import Config from './Screens/Config/Config';
+import { store } from '.';
 
 export default function Navigator(){
+  const { background } = store.getState();
   return(
   <Router>
     <Layout>
+        <style>
+          {`
+            body{
+              background: ${background.value};
+            }            
+          `}
+        </style>
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/documentação' element={<Documentação />}/>
