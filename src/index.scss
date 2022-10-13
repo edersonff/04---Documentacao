@@ -14,6 +14,10 @@
   --a-select: #2cfdfd;
   --title: #fff;
   --footer: rgb(219, 219, 219);
+  --search: #1D2A2D;
+  --search-text: #cfcfcf;
+  --language: #233437;
+  --language-text: #88ADB5;
 }
 img,a{
   -webkit-user-drag: none;
@@ -34,6 +38,10 @@ body {
 #root,
 .App{
   height: 100%;
+}
+input, select{
+  outline: none;
+  border: 0;
 }
 button{
   border: none;
@@ -152,6 +160,15 @@ button{
     }
   }
 }
+.svg-click{
+  svg{
+    transition: transform 0.01s ease;
+    cursor: pointer;
+    &:active{
+      transform: scale(0.92) !important;
+    }
+  }
+}
 .ignore-container{
   height: 75vh;
   position: fixed;
@@ -184,4 +201,19 @@ button{
   .resize{
     width: 100%!important;
   }
+  .hide-mobile{
+    display: none!important;
+  }
+  .navbar-container{
+    width: 20%!important;
+    .buttons-navbar{
+      padding: 0!important;
+    }
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .hide-mobile-first{
+    display: none!important;
+  }
+  
 }

@@ -1,6 +1,17 @@
 .codecomponent-container{
     width: 100%;
     background: rgba(114, 114, 114, 0.17);
+    .right{
+        display: flex;
+        font-size: 1.5em;
+        align-items: center;
+        .run{
+            color: greenyellow;
+            &:hover{
+                color: green;
+            }
+        }
+    }
     .codecomponent-title{
         height: 50px;
         display: flex;

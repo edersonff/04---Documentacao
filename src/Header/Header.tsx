@@ -2,18 +2,19 @@ import { Link } from 'react-router-dom'
 import './Header.scss'
 import screensList from '../data/screensList';
 import { BsFillGearFill } from 'react-icons/bs';
+import { FiSearch } from 'react-icons/fi';
 
 function Header() {  
     return (
         <>
             <header className="navbar">
                 <div className="content">
-                    <div className="left">
+                    <div className="left resize">
                         <div className="menu-btn"/>
                         <div className="title">
                             {'NOME DO ...'}
                         </div>
-                        <div className="links flex align">
+                        <div className="links flex align resize">
                             {screensList.map((screen, i)=>{
                                 return(
                                     <Link key={i} to={screen.route}>{screen.title}</Link>
@@ -22,7 +23,21 @@ function Header() {
                         </div>
                     </div>
                     <div className="right">
-                        <div className="icons-header svg-hover">
+                        <div className="search hide-mobile lateral-margin">
+                            <FiSearch />
+                            <input  placeholder='Search' type="search" />
+                        </div>
+                        <select className="language hide-mobile-first lateral-margin">
+                            <option selected disabled>Language</option>
+                            {
+                                ['English', 'Português'].map((language, i)=>{
+                                    return(
+                                        <option key={i}>{language}</option>
+                                    );
+                                })
+                            }
+                        </select>
+                        <div className="icons-header svg-hover lateral-margin">
                             <Link to='/config'>
                                 <BsFillGearFill />
                             </Link>

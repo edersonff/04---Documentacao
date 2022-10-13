@@ -9,7 +9,7 @@ function Documentação({}) {
     return (
     <div className='documentação-container ignore-container'>
         <Navbar />
-        <div className="documentação-content">
+        <div className="documentação-content resize">
             <Stars />
             <h2 className="navbar-section margin">
                 JAVASCRIPT {'>'} <span>Home</span> {'>'} <span>Back-end</span> {'>'} <span>Seila</span>

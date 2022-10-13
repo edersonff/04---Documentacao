@@ -1,5 +1,6 @@
 import './CodeComponent.scss';
 import Option from './Option/Option';
+import { BsFillPlayFill } from 'react-icons/bs';
 
 function CodeComponent({title} : {title: string}) {
     let code : any = `{
@@ -31,11 +32,17 @@ function CodeComponent({title} : {title: string}) {
             <h1 className="title">
                 {title}
             </h1>
-            <div className="codecomponent-options">
-                <Option color='#BA39AD' />
-                <Option color='#3BBA39' />
-                <Option color='#3955BA' />
-                <Option color='#BA3939' />
+            <div className="right svg-click">
+                <div className="codecomponent-options">
+                    {
+                        ['#BA39AD', '#3BBA39', '#3955BA', '#BA3939'].map((color, i)=>{
+                            return(
+                                <Option color={color} key={i} />
+                            );
+                        })
+                    }
+                </div>
+                <BsFillPlayFill className='run'/>
             </div>
         </div>
         <div className="code-container">
