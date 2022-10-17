@@ -6,7 +6,7 @@ import './Coffe.scss';
 
 function Coffe() {
     return (
-        <div className="coffe-container">
+        <div className="coffe-container hide-mobile">
             <div className="coffe-canva">
                 <Canvas>
                     <OrbitControls minPolarAngle={1.5} maxPolarAngle={1.5} autoRotate={true} autoRotateSpeed={2} enableZoom={false} />

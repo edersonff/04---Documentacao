@@ -2,7 +2,13 @@ import './CodeComponent.scss';
 import Option from './Option/Option';
 import { BsFillPlayFill } from 'react-icons/bs';
 
-function CodeComponent({title} : {title: string}) {
+interface options{
+    name: string,
+    icon: any,
+    code: string
+}
+
+function CodeComponent({title, opts} : {title: string, opts: options[]}) {
     let code : any = `{
         "glossary": {
             "title": "example glossary",
@@ -67,6 +73,20 @@ function CodeComponent({title} : {title: string}) {
                 })}
             </div>
         </div>
+        {
+            opts.map((opt : options, i : number) => {
+                return(
+                    <div className="option">
+                        <div className="option-icon">
+                            {opt.icon}
+                        </div>
+                        <div className="option-name">
+                            {opt.name}
+                        </div>
+                    </div>
+                )
+            })
+        }
     </div>
     );
 }

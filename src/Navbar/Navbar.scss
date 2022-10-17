@@ -6,6 +6,9 @@
     z-index: 1;
     background-color: var(--navbar);
     overflow-y: scroll;
+    &.minifed{
+        width: 100px;
+    }
     &::-webkit-scrollbar {
       width: 0;
     }
@@ -20,11 +23,6 @@
             font-weight: 400;
             background: #203237;
         }
-        *{
-            width: 100%;
-            padding: 0 26px;
-            box-sizing: border-box;
-        }
         .buttons-navbar{
             overflow-y: hidden;
             transition: 0.25s height cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -38,6 +36,9 @@
                 font-size: 15px;
                 text-align: left;
                 font-weight: 100;
+                width: 100%;
+                padding: 0 26px;
+                box-sizing: border-box;
                 &.active{
                     color: #000;
                     background-color: var(--second);

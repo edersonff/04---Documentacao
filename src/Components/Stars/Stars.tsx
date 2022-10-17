@@ -5,16 +5,20 @@ import './Stars.scss';
 
 function Stars() {
     const [starsPos, setStarsPos] = React.useState(0);
+    const [selected, setSelected] = React.useState(0);
     function setStar(starPos : number) {
         setStarsPos(starPos);
     }
+    function setSelectedStar(starPos : number) {
+        setSelected(starPos);
+    }
     return (
-        <div className="stars svg-hover">
+        <div className="stars svg-hover" onMouseLeave={()=>{setStar(selected)}}>
             {arrN(5).map((_, i) => {
                 if(i <= starsPos)
-                    return <BsStarFill onMouseOver={()=>{ setStar(i) }} style={{color: 'yellow'}} key={i} />
+                    return <BsStarFill onClick={()=>{ setSelectedStar(i) }} onMouseOver={()=>{ setStar(i) }} style={{color: 'yellow'}} key={i} />
                 else 
-                    return <BsStarFill onMouseOver={()=>{ setStar(i) }} key={i} />
+                    return <BsStarFill onClick={()=>{ setSelectedStar(i) }} onMouseOver={()=>{ setStar(i) }} key={i} />
             })}
         </div>
     );

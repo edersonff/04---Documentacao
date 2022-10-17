@@ -162,6 +162,10 @@ button{
     cursor: pointer;
     &:hover{
       transform: scale(1.2) rotate(45deg)!important;
+      &:active{
+        transition: transform 0.02s ease;
+        transform: scale(1.1) rotate(45deg)!important;
+      }
     }
   }
 }
@@ -210,10 +214,13 @@ button{
     display: none!important;
   }
   .navbar-container{
-    width: 20%!important;
+    width: 20vw!important;
     .buttons-navbar{
       padding: 0!important;
     }
+  }
+  .container-sidebar{
+    padding-left: 0px!important;
   }
 }
 @media only screen and (max-width: 1100px) {
