@@ -16,7 +16,7 @@ function Stars() {
         <div className="stars svg-hover" onMouseLeave={()=>{setStar(selected)}}>
             {arrN(5).map((_, i) => {
                 if(i <= starsPos)
-                    return <BsStarFill onClick={()=>{ setSelectedStar(i) }} onMouseOver={()=>{ setStar(i) }} style={{color: 'yellow'}} key={i} />
+                    return <BsStarFill onClick={()=>{ setSelectedStar(i) }} onMouseOver={()=>{ setStar(i) }} style={{color: 'yellow', transform:'rotate(45deg)!important'}} key={i} />
                 else 
                     return <BsStarFill onClick={()=>{ setSelectedStar(i) }} onMouseOver={()=>{ setStar(i) }} key={i} />
             })}

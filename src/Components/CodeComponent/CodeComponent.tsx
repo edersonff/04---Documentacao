@@ -1,6 +1,7 @@
 import './CodeComponent.scss';
 import Option from './Option/Option';
 import { BsFillPlayFill } from 'react-icons/bs';
+import { useState } from 'react';
 
 interface options{
     name: string,
@@ -9,6 +10,7 @@ interface options{
 }
 
 function CodeComponent({title, opts} : {title: string, opts: options[]}) {
+    const [sideMenuWidth, setSideMenuWidth] = useState(0);
     let code : any = `{
         "glossary": {
             "title": "example glossary",
@@ -52,6 +54,11 @@ function CodeComponent({title, opts} : {title: string, opts: options[]}) {
             </div>
         </div>
         <div className="code-container">
+            <div style={{width: sideMenuWidth}} className="side-container" onDrag={(e)=>{
+                setSideMenuWidth(e.movementX);
+            }}>
+                <div className="scrollableMenu" />
+            </div>
             <div className="numbers">
                 {code.map((code : string, i : number) => {
                     return(
@@ -73,20 +80,22 @@ function CodeComponent({title, opts} : {title: string, opts: options[]}) {
                 })}
             </div>
         </div>
-        {
-            opts.map((opt : options, i : number) => {
-                return(
-                    <div className="option">
-                        <div className="option-icon">
-                            {opt.icon}
+        <div className="options">
+            {
+                opts.map((opt : options, i : number) => {
+                    return(
+                        <div className="option svg-click">
+                            <div className="option-icon">
+                                {opt.icon}
+                            </div>
+                            <div className="option-name">
+                                {opt.name}
+                            </div>
                         </div>
-                        <div className="option-name">
-                            {opt.name}
-                        </div>
-                    </div>
-                )
-            })
-        }
+                    )
+                })
+            }
+        </div>
     </div>
     );
 }
